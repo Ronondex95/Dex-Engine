@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F520264-78DA-4EEC-89CE-FBF2491A97B1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DexCore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\bin\$(Configuration)\</OutDir>
+    <IntDir>.\obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>.\bin\$(Configuration)\</OutDir>
+    <IntDir>.\obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DEXCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy bin\$(Configuration)\$(TargetFileName) ..\Work-Space\bin\$(Configuration)\$(TargetFileName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DEXCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy bin\$(Configuration)\$(TargetFileName) ..\Work-Space\bin\$(Configuration)\$(TargetFileName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Dex.h" />
+    <ClInclude Include="include\DexCamera.h" />
+    <ClInclude Include="include\DexConfigFile.h" />
+    <ClInclude Include="include\DexCore.h" />
+    <ClInclude Include="include\DexDynamicLibrary.h" />
+    <ClInclude Include="include\DexGroup.h" />
+    <ClInclude Include="include\DexIndexBuffer.h" />
+    <ClInclude Include="include\DexLight.h" />
+    <ClInclude Include="include\DexLog.h" />
+    <ClInclude Include="include\DexMash.h" />
+    <ClInclude Include="include\DexMath.h" />
+    <ClInclude Include="include\DexObject.h" />
+    <ClInclude Include="include\DexPreCompletion.h" />
+    <ClInclude Include="include\DexPrimitive.h" />
+    <ClInclude Include="include\DexRenderConnect.h" />
+    <ClInclude Include="include\DexRenderSystem.h" />
+    <ClInclude Include="include\DexRenderWindow.h" />
+    <ClInclude Include="include\DexRootGroup.h" />
+    <ClInclude Include="include\DexScene.h" />
+    <ClInclude Include="include\DexStringConverter.h" />
+    <ClInclude Include="include\DexVertexBuffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\DexCamera.cpp" />
+    <ClCompile Include="src\DexConfigFile.cpp" />
+    <ClCompile Include="src\DexCore.cpp" />
+    <ClCompile Include="src\DexDynamicLibrary.cpp" />
+    <ClCompile Include="src\DexGroup.cpp" />
+    <ClCompile Include="src\DexLight.cpp" />
+    <ClCompile Include="src\DexLog.cpp" />
+    <ClCompile Include="src\DexMash.cpp" />
+    <ClCompile Include="src\DexObject.cpp" />
+    <ClCompile Include="src\DexPrimitive.cpp" />
+    <ClCompile Include="src\DexRenderSystem.cpp" />
+    <ClCompile Include="src\DexRenderWindow.cpp" />
+    <ClCompile Include="src\DexRootGroup.cpp" />
+    <ClCompile Include="src\DexScene.cpp" />
+    <ClCompile Include="src\DexStringConverter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

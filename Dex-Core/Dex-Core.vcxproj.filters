@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{354e905a-a278-43e3-a4d9-585e93f4c526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{a34beb41-3180-493f-96da-ce83437409fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphic">
+      <UniqueIdentifier>{60ad4ae0-d8a9-450f-8ae9-7a626a1e2b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene\Object">
+      <UniqueIdentifier>{fcf261bc-8f34-4415-a3ce-00d5c958cbc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene\Object\Primary">
+      <UniqueIdentifier>{402d188b-bd94-445c-8d6f-0ed85423ebab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{9518989a-18b8-487a-9886-291286b16ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{ee46e305-e120-40c9-9cf9-33b2b2bdc845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic">
+      <UniqueIdentifier>{3542472e-4f53-4bef-a223-83828383dd03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Object">
+      <UniqueIdentifier>{5d785024-44fc-47cc-8368-32f9f227acbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Object\Primary">
+      <UniqueIdentifier>{612c0df9-abee-495d-9075-6b759892ef88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Dex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexPreCompletion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexConfigFile.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexCore.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexDynamicLibrary.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexGroup.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexIndexBuffer.h">
+      <Filter>Header Files\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexLog.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexRootGroup.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexScene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexMath.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexStringConverter.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexVertexBuffer.h">
+      <Filter>Header Files\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexRenderWindow.h">
+      <Filter>Header Files\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexRenderSystem.h">
+      <Filter>Header Files\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexRenderConnect.h">
+      <Filter>Header Files\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexObject.h">
+      <Filter>Header Files\Scene\Object\Primary</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexPrimitive.h">
+      <Filter>Header Files\Scene\Object\Primary</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexCamera.h">
+      <Filter>Header Files\Scene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexLight.h">
+      <Filter>Header Files\Scene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DexMash.h">
+      <Filter>Header Files\Scene\Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\DexConfigFile.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexCore.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexDynamicLibrary.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexLog.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexStringConverter.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexGroup.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexScene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexRenderSystem.cpp">
+      <Filter>Source Files\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexRenderWindow.cpp">
+      <Filter>Source Files\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexRootGroup.cpp">
+      <Filter>Source Files\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexObject.cpp">
+      <Filter>Source Files\Scene\Object\Primary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexPrimitive.cpp">
+      <Filter>Source Files\Scene\Object\Primary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexCamera.cpp">
+      <Filter>Source Files\Scene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexLight.cpp">
+      <Filter>Source Files\Scene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DexMash.cpp">
+      <Filter>Source Files\Scene\Object</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

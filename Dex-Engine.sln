@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dex-Core", "Dex-Core\Dex-Core.vcxproj", "{2F520264-78DA-4EEC-89CE-FBF2491A97B1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dex-RenderSystem-DIrectX_9", "Dex-RenderSystem-DIrectX_9\Dex-RenderSystem-DIrectX_9.vcxproj", "{481C80C8-B3AA-4E6B-93BB-39EE0FA7D29A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F520264-78DA-4EEC-89CE-FBF2491A97B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F520264-78DA-4EEC-89CE-FBF2491A97B1}.Debug|Win32.Build.0 = Debug|Win32
+		{2F520264-78DA-4EEC-89CE-FBF2491A97B1}.Release|Win32.ActiveCfg = Release|Win32
+		{2F520264-78DA-4EEC-89CE-FBF2491A97B1}.Release|Win32.Build.0 = Release|Win32
+		{481C80C8-B3AA-4E6B-93BB-39EE0FA7D29A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{481C80C8-B3AA-4E6B-93BB-39EE0FA7D29A}.Debug|Win32.Build.0 = Debug|Win32
+		{481C80C8-B3AA-4E6B-93BB-39EE0FA7D29A}.Release|Win32.ActiveCfg = Release|Win32
+		{481C80C8-B3AA-4E6B-93BB-39EE0FA7D29A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
